@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap offline css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/custom-animated-logo.css" />
+    <title>Chrome Home</title>
+  </head>
+  <body>
+    <header class="overflow-hidden">
+      <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link text-lightwhite link-hover rounded" aria-current="page" href="http://gmail.com/">Gmail</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link text-lightwhite link-hover rounded" aria-disabled="true" href="https://arifulsajib.netlify.app/">Website</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link text-lightwhite link-hover rounded" aria-disabled="true" href="https://arifulsajib.netlify.app/">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-lightwhite link-hover rounded" href="#bookmarks">Bookmarks</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <!-- Profile section -->
+      <section class="container d-flex flex-column justify-content-center my-3 position-relative pb-5">
+        <div class="container border w-lg-50 d-flex flex-column align-items-center py-4 position-relative">
+          <!-- Animated logo -->
+          <div class="animated-logo">
+            <div class="atom">
+              <div class="electron"></div>
+              <div class="electron-alpha"></div>
+              <div class="electron-omega"></div>
+            </div>
+          </div>
+          <!-- social media -->
+          <div class="mt-5 mb-3 d-flex flex-wrap">
+            <!-- instagram -->
+            <div class="rounded-circle bg-lightwhite mx-2">
+              <a href="https://www.instagram.com/arifulsajib347/">
+                <img src="./img/logos/instagram.png" alt="" class="p-2" width="36" />
+              </a>
+            </div>
+            <!-- youtube -->
+            <div class="rounded-circle bg-lightwhite mx-2">
+              <a href="https://www.youtube.com/@codewithsajib">
+                <img src="./img/logos/youtube.png" alt="" class="p-2" width="36" />
+              </a>
+            </div>
+            <!-- facebook -->
+            <div class="rounded-circle bg-lightwhite mx-2">
+              <a href="https://www.facebook.com/arifulsajib347">
+                <img src="./img/logos/facebook.png" alt="" class="p-2" width="36" />
+              </a>
+            </div>
+            <!-- linkedin -->
+            <div class="rounded-circle bg-lightwhite mx-2">
+              <a href="https://www.linkedin.com/in/arifulsajib/">
+                <img src="./img/logos/linkedin.png" alt="" class="p-2" width="36" />
+              </a>
+            </div>
+            <!-- github -->
+            <div class="rounded-circle bg-lightwhite mx-2">
+              <a href="https://github.com/arifulsajib/">
+                <img src="./img/logos/github.png" alt="" class="p-2" width="36" />
+              </a>
+            </div>
+            <!-- codepen -->
+            <!-- <div class="rounded-circle bg-lightwhite mx-2">
+              <a href="#">
+                <img src="./img/logos/codepen.png" alt="" class="p-2" width="36" />
+              </a>
+            </div> -->
+          </div>
+          <!-- Profile picture -->
+          <div class="d-none d-md-block position-absolute top-50 end-0">
+            <img src="./img/dp.jpg" width="100" alt="" class="rounded-circle me-2" />
+          </div>
+          <!-- Profile picture small -->
+          <div class="d-block d-md-none position-absolute top-50 end-0">
+            <img src="./img/dp.jpg" width="80" alt="" class="rounded-circle me-2" />
+          </div>
+          <!-- Quote -->
+          <div class="position-absolute top-100 end-0 quote mt-3 me-2">
+            <h2 class="text-glow text-white">Coding is Love ❤️</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Google Search Section-->
+      <section class="container d-flex flex-column justify-content-center my-5 position-relative pb-5">
+        <div class="container w-lg-50 pt-2">
+          <form class="d-flex w-lg-75">
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-glass border-0 p-2" id="basic-addon1"><img src="./img/logos/google.png" width="30" /></span>
+              <input type="text" class="form-control form-control-lg bg-glass border-0 text-white shadow-none rounded-end" placeholder="Search Anything" aria-label="Username" aria-describedby="basic-addon1" />
+              <button type="submit" class="bg-glass border-0 ms-2 rounded">
+                <img src="./img/logos/search.png" width="30" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- bootstrap offline js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

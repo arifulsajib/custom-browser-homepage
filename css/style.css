@@ -1,0 +1,214 @@
+/* install custom fonts */
+@font-face {
+  font-family: "Pacifico";
+  src: local("./fonts/Pacifico-Regular.ttf"), url("./fonts/Pacifico-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("./fonts/Roboto-Bold.ttf"), url("./fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("./fonts/Roboto-Regular.ttf"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("./fonts/Roboto-Light.ttf"), url("./fonts/Roboto-Light.ttf") format("truetype");
+}
+
+/* General Css */
+body {
+  font-family: "Roboto" !important;
+  background-color: #30303a !important;
+}
+
+.bg-glass {
+  background-color: rgba(244, 238, 238, 0.2) !important;
+}
+
+.quote {
+  font-family: "Pacifico";
+}
+
+.link-hover:hover {
+  background-color: rgb(28, 27, 27) !important;
+}
+
+.text-lightwhite {
+  color: rgb(236, 226, 226) !important;
+}
+
+.w-lg-50 {
+  width: 50%;
+}
+
+.w-lg-75 {
+  width: 75%;
+}
+
+.bg-lightwhite {
+  background-color: rgb(214, 210, 210) !important;
+}
+.bg-lightwhite:hover {
+  background-color: white !important;
+}
+
+.form-control::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+/* glow and blink text */
+@keyframes blinkText {
+  0% {
+    color: #fff;
+    text-shadow: 0px 0px 20px #00aad4;
+  }
+  19% {
+    color: #fff;
+    text-shadow: 0px 0px 20px #00aad4;
+  }
+  20% {
+    color: #9e9e9e;
+    text-shadow: none;
+  }
+  21% {
+    color: #fff;
+    text-shadow: 0px 0px 20px #00aad4;
+  }
+  60% {
+    color: #fff;
+    text-shadow: 0px 0px 20px #00aad4;
+  }
+  61% {
+    color: #9e9e9e;
+    text-shadow: none;
+  }
+  62% {
+    color: #fff;
+    text-shadow: 0px 0px 20px #00aad4;
+  }
+  63% {
+    color: #9e9e9e;
+    text-shadow: none;
+  }
+  64% {
+    color: #fff;
+    text-shadow: 0px 0px 20px #00aad4;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0px 0px 20px #00aad4;
+  }
+}
+
+@keyframes blinkTextAfter {
+  0% {
+    color: #00aad4;
+  }
+  19% {
+    color: #00aad4;
+  }
+  20% {
+    color: transparent;
+  }
+  21% {
+    color: #00aad4;
+  }
+  60% {
+    color: #00aad4;
+  }
+  61% {
+    color: transparent;
+  }
+  62% {
+    color: #00aad4;
+  }
+  63% {
+    color: transparent;
+  }
+  64% {
+    color: #00aad4;
+  }
+  100% {
+    color: #00aad4;
+  }
+}
+
+@keyframes blinkTextBefore {
+  0% {
+    background: #00aad4;
+  }
+  19% {
+    background: #00aad4;
+  }
+  20% {
+    background: transparent;
+  }
+  21% {
+    background: #00aad4;
+  }
+  60% {
+    background: #00aad4;
+  }
+  61% {
+    background: transparent;
+  }
+  62% {
+    background: #00aad4;
+  }
+  63% {
+    background: transparent;
+  }
+  64% {
+    background: #00aad4;
+  }
+  100% {
+    background: #00aad4;
+  }
+}
+
+.text-glow {
+  font-family: "Pacifico", cursive;
+  text-shadow: 0px 0px 20px #00aad4;
+  -webkit-animation: blinkText 5s infinite;
+  animation: blinkText 5s infinite;
+}
+
+.text-glow:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #00aad4;
+  z-index: -1;
+  filter: blur(15px);
+  -webkit-animation: blinkTextAfter 5s infinite;
+  animation: blinkTextAfter 5s infinite;
+}
+
+.text-glow:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00aad4;
+  z-index: -2;
+  opacity: 0.7;
+  filter: blur(50px);
+  -webkit-animation: blinkTextBefore 5s infinite;
+  animation: blinkTextBefore 5s infinite;
+}
+
+/* Media query */
+@media only screen and (max-width: 700px) {
+  .w-lg-50 {
+    width: 100%;
+  }
+
+  .w-lg-75 {
+    width: 100%;
+  }
+}
