@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="/css/custom-animated-logo.css" />
+
     <title>Chrome Home</title>
   </head>
   <body>
@@ -103,20 +103,117 @@
       </section>
 
       <!-- Google Search Section-->
-      <section class="container d-flex flex-column justify-content-center my-5 position-relative pb-5">
+      <section class="container d-flex flex-column justify-content-center mt-5 mb-4">
         <div class="container w-lg-50 pt-2">
-          <form class="d-flex w-lg-75">
+          <form class="d-flex w-lg-75" id="google-form">
             <div class="input-group mb-3">
               <span class="input-group-text bg-glass border-0 p-2" id="basic-addon1"><img src="./img/logos/google.png" width="30" /></span>
-              <input type="text" class="form-control form-control-lg bg-glass border-0 text-white shadow-none rounded-end" placeholder="Search Anything" aria-label="Username" aria-describedby="basic-addon1" />
-              <button type="submit" class="bg-glass border-0 ms-2 rounded">
+              <input type="text" id="search-input" class="form-control form-control-lg bg-glass border-0 text-white shadow-none rounded-end" placeholder="Search Anything" aria-label="Username" aria-describedby="basic-addon1" />
+              <button type="submit" id="search-btn" class="bg-glass border-0 ms-2 rounded">
                 <img src="./img/logos/search.png" width="30" />
               </button>
             </div>
           </form>
         </div>
       </section>
+
+      <!-- All Boookmarks Section -->
+      <section id="bookmarks" class="container d-flex justify-content-center mb-5 pb-5">
+        <div class="container w-lg-50 row row-cols-2 g-3">
+          <!-- links -->
+          <div class="col">
+            <a href="https://stackoverflow.com/" class="d-flex align-items-center bg-glass p-2 px-4 text-decoration-none rounded">
+              <div class="me-1">
+                <img src="./img/logos/stack-overflow.png" alt="" width="30" />
+              </div>
+              <div class="text-lightwhite">
+                <p class="fs-6 p-0 m-0">Stack OverFlow</p>
+                <p class="fs-7 m-0 text-light">stackoverflow.com</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://github.com/" class="d-flex align-items-center bg-glass p-2 px-4 text-decoration-none rounded">
+              <div class="me-2">
+                <img src="./img/logos/github.png" alt="" width="30" />
+              </div>
+              <div class="text-lightwhite">
+                <p class="fs-6 p-0 m-0">Github</p>
+                <p class="fs-7 m-0 text-light">github.com</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://youtube.com/" class="d-flex align-items-center bg-glass p-2 px-4 text-decoration-none rounded">
+              <div class="me-2">
+                <img src="./img/logos/youtube.png" alt="" width="30" />
+              </div>
+              <div class="text-lightwhite">
+                <p class="fs-6 p-0 m-0">Youtube</p>
+                <p class="fs-7 m-0 text-light">@codewithsajib</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://chat.openai.com/" class="d-flex align-items-center bg-glass p-2 px-4 text-decoration-none rounded">
+              <div class="me-2">
+                <img src="./img/logos/chatgpt.png" alt="" width="30" />
+              </div>
+              <div class="text-lightwhite">
+                <p class="fs-6 p-0 m-0">Chat GPT</p>
+                <p class="fs-7 m-0 text-light">chat.openai.com</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.w3schools.com/" class="d-flex align-items-center bg-glass p-2 px-4 text-decoration-none rounded">
+              <div class="me-2">
+                <img src="./img/logos/w3school.png" alt="" width="30" />
+              </div>
+              <div class="text-lightwhite">
+                <p class="fs-6 p-0 m-0">W3Schools</p>
+                <p class="fs-7 m-0 text-light">w3schools.com</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://codepen.io/" class="d-flex align-items-center bg-glass p-2 px-4 text-decoration-none rounded">
+              <div class="me-2">
+                <img src="./img/logos/codepen.png" alt="" width="30" />
+              </div>
+              <div class="text-lightwhite">
+                <p class="fs-6 p-0 m-0">CodePen</p>
+                <p class="fs-7 m-0 text-light">codepen.io</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.imdb.com/" class="d-flex align-items-center bg-glass p-2 px-4 text-decoration-none rounded">
+              <div class="me-2">
+                <img src="./img/logos/imdb.png" alt="" width="30" />
+              </div>
+              <div class="text-lightwhite">
+                <p class="fs-6 p-0 m-0">IMDB</p>
+                <p class="fs-7 m-0 text-light">imdb.com</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://mlwbd.com/" class="d-flex align-items-center bg-glass p-2 px-4 text-decoration-none rounded">
+              <div class="me-2">
+                <img src="./img/logos/movie.png" alt="" width="30" />
+              </div>
+              <div class="text-lightwhite">
+                <p class="fs-6 p-0 m-0">MLWBD</p>
+                <p class="fs-7 m-0 text-light">mlwbd.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- Custom js -->
+    <script src="./js/main.js"></script>
     <!-- bootstrap offline js -->
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
