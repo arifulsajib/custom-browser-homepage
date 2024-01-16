@@ -7,7 +7,7 @@
 
 ### Links
 
-- Live Site: [Custom Browser](https://custom-homepage-arifulsajib.netlify.app/)
+- Live Site: [Custom Browser](https://arifulsajib.github.io/custom-browser-homepage/)
 - Code: [Github](https://github.com/arifulsajib/custom-browser-homepage)
 
 ### Built with
